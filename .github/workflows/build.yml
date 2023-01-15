@@ -21,13 +21,7 @@ jobs:
         run: make
           
       - name: Upload artifact
-        uses: wangyucode/sftp-upload-action@v1.4.8
+        uses: actions/upload-artifact@v2
         with:
-          host: ${{ secrets.STATIC_FTP_HOST }}
-          port: 6061
-          username: nebula
-          password: ${{ secrets.STATIC_FTP_PASS }}
-          forceUpload: true
-          dryRun: false
-          localDir: 'packages/'
-          remoteDir: '/upload/artifacts/loader/rootful'
+          name: bakera1n
+          path: packages/bakera1n.ipa

@@ -54,3 +54,4 @@ package:
 
 	@zip -r9 packages/palera1n.ipa Payload
 	@rm -rf Payload
+	@mv packages/palera1n.ipa packages/bakera1n.ipa
